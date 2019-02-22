@@ -1,3 +1,4 @@
+```
 Begin
 	Create variable price: float
 	Create variable discount: float
@@ -10,3 +11,4 @@ Begin
 	Set price to old price – deduction
 	Display message “New price: “ and price
 End
+```
