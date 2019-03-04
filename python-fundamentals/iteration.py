@@ -1,5 +1,5 @@
 ### Conditional loop ###
-'''
+
 # Simple condition
 age = int(input("How old are you?"))
 while age < 18:
@@ -16,7 +16,7 @@ while num < 1 or num > 10: # truth table, either needs to be true
 print("You entered", num)
 
 ### For loop ### 
-'''
+
 
 for i in range(10):  # From zero to 9
     print("Hello", i)

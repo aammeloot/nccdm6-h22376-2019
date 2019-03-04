@@ -10,6 +10,9 @@ This document will cover the basics of the Python language. It assumes you are f
 - [String Operators](#stringOp)
 - [Comparison Operators](#compOp)
 - [Boolean Operators](#boolOp)
+- [Selection](#if)
+- [`while` loop](#while)
+- [`for` loop](#for)
 
 ## Input and Output
 ### <a name="stringIO"></a>Simple string input and output
@@ -187,3 +190,81 @@ Operator logic follows the **Truth Tables**:
 | ------- | -------- |
 | `True`  | `False`  |
 | `False` | `True`   |
+
+## <a name="if"></a>Selection
+
+Aka. If / Else If / Else statement
+
+```python
+age = int(input("How old are you?"))
+
+# if statement delimited with indents
+if age < 17:
+    print("Sorry")
+    print("Too early to get a licence")
+else:
+    print("That's fine you can get a licence")
+```
+
+```python
+age = int(input("How old are you?"))
+
+# else if in python is elif
+if age < 40:
+    print("you are young")
+elif age < 60:
+    print("Your are middle-aged")
+else:
+    print("You are entitled to a bus pass.")
+```
+
+
+## Iteration
+### <a name="while"></a>Conditional Loop
+
+#### Simple condition
+```python
+age = int(input("How old are you?"))
+while age < 17:
+    print("Sorry a bit too young to drive.")
+    age = int(input("How old are you?"))
+
+print("Give me a lift now.")
+```
+
+#### Input validation with complex condition
+```python
+num = int(input("Enter a number between 1 and 10"))
+while num < 1 or num > 10: # truth table, either needs to be true
+    num = int(input("Enter a number between 1 and 10"))
+
+print("You entered", num)
+```
+
+### <a name="for"></a>For loop
+
+The `range()` function can take several values, all except one are optional:
+
+```python
+# 0 to 9
+for i in range(10):  # From zero to 9
+    print("Hello", i)
+
+# 1 to 10
+for i in range(1,11):# range(start, finish)
+    print("Hello", i)
+
+# 0 to 8 skipping every other
+for i in range(0,10,2): # range(start, finish, step)
+    print("Hello", i)
+
+# 10 to 1
+for i in range(10, 0, -1): 
+    print("Hello", i)
+```
+
+You can also use for on lists, string etc.
+```python
+for c in "My student is yawning.":
+    print(c)
+```
