@@ -17,5 +17,18 @@ Once the loop has finished its course, calculate and display average value of nu
 ## Pseudo-code
 
 ```
+Variable: numbers, empty list of integers
+Variable: n, integer
+Variable: average, float
 
+while n is not -1
+    Set n to input "Please enter a number, -1 to stop."
+    If n is not -1
+       Append n to numbers
+    End if
+end while
+
+Display numbers to screen
+Set average to sum of all numbers divided by length of numbers
+Display average to screen
 ```
