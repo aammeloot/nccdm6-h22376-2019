@@ -32,3 +32,15 @@ Display numbers to screen
 Set average to sum of all numbers divided by length of numbers
 Display average to screen
 ```
+
+# Exercise 2
+
+Consider the following list of numbers:
+
+```python
+num = [10, 55, 20, 36, 100, 20]
+```
+
+Using an iteration (```for``` loop), come up with a possible solution to find out which value is the highest, or which value is the lowest of the list.
+Find that single value, put it in a variable, print it out.
+- You are not allowed to use the Python min() or max() functions.

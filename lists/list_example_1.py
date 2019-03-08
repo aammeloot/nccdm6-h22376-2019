@@ -50,3 +50,9 @@ for n in ages:
     total += n # increment total with current value
 print("Average: ", total / len(ages))
 
+# Alternatively
+total = sum(ages)
+
+
+
+
