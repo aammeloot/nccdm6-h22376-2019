@@ -17,30 +17,37 @@ def display_options():
     -----------------------------------------
     """)
 
-# Set variable choice to zero
-choice = 0
+def main():
+    # Set variable choice to zero
+    choice = 0
 
-# First loop, managing the menu options
-while choice != 6:
-    display_options() # Display menu
-    # Get user input
-    choice = int(input("Please enter your selection: "))
-    # input validation
-    while choice < 1 or choice > 6:
-        print("Error, invalid choice") # Error message
-        display_options() # Menu (again)
-        choice = int(input("Please enter your selection (1-6): "))
-    
-    # Handling the menu choices:
-    if choice == 1:
-        print("Choice 1")
-    elif choice == 2:
-        print("Choice 2")
-    elif choice == 3:
-        print("Choice 3")
-    elif choice == 4:
-        print("Choice 4")
-    elif choice == 5:
-        print("Choice 5")
-    else:
-        print("Bye!")
+    # First loop, managing the menu options
+    while choice != 6:
+        display_options() # Display menu
+        # Get user input
+        choice = int(input("Please enter your selection: "))
+        # input validation
+        while choice < 1 or choice > 6:
+            print("Error, invalid choice") # Error message
+            display_options() # Menu (again)
+            choice = int(input("Please enter your selection (1-6): "))
+
+        # Handling the menu choices:
+        if choice == 1:
+            print("Choice 1")
+        elif choice == 2:
+            print("Choice 2")
+        elif choice == 3:
+            print("Choice 3")
+        elif choice == 4:
+            print("Choice 4")
+        elif choice == 5:
+            print("Choice 5")
+        else:
+            print("Bye!")
+
+# Boilerplate code
+
+if __name__ == "__main__":
+    main()
+
