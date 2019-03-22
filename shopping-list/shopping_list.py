@@ -5,6 +5,10 @@
     Started 22 March 2019
 '''
 
+# Create a global list: empty
+shopping_list = []
+
+
 def display_options():
     print(""" Welcome to the shopping list program
     -----------------------------------------
@@ -16,6 +20,17 @@ def display_options():
     6. Quit
     -----------------------------------------
     """)
+
+
+# Function add_item
+# Parameter: item, item to be added
+def add_item(item):
+    # Check if item is in shopping list
+    if item in shopping_list:
+        print("Item already present")
+    else:
+        shopping_list.append(item)
+
 
 def main():
     # Set variable choice to zero
@@ -34,7 +49,8 @@ def main():
 
         # Handling the menu choices:
         if choice == 1:
-            print("Choice 1")
+            item_name = input("Enter the item you wish to add: ")
+            add_item(item_name)
         elif choice == 2:
             print("Choice 2")
         elif choice == 3:
