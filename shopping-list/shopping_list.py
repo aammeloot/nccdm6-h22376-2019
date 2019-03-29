@@ -32,6 +32,18 @@ def add_item(item):
         shopping_list.append(item)
 
 
+# Function: display
+# Displaying all the elements in the list
+def display():
+    print("The list contains: ")
+
+    for i in range(len(shopping_list)):
+        print(shopping_list[i])
+    
+    print()
+
+
+
 def main():
     # Set variable choice to zero
     choice = 0
@@ -54,7 +66,8 @@ def main():
         elif choice == 2:
             print("Choice 2")
         elif choice == 3:
-            print("Choice 3")
+            display()
+
         elif choice == 4:
             print("Choice 4")
         elif choice == 5:
